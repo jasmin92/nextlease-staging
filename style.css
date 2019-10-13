@@ -4,6 +4,7 @@ html, button, input {
   line-height: 1.7;
 }
 h1 {
+  margin-top: 50px;
   text-transform: uppercase;
 }
 input {
@@ -33,4 +34,15 @@ a {
 small {
   font-family: inherit;
   color: #9a9696;
+}
+.alert {
+  width: 100%;
+  text-align: center;
+  background: #ff4206;
+  color: white;
+  font-weight: 600;
+  position: fixed;
+  font-size: 16px;
+  top: 0;
+  left: 0;
 }
