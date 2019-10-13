@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Embedded staging</title>
     <script src="https://d6vti5gk2q5rw.cloudfront.net/index.js"></script>
 </head>
 <body>
-    <nextlease-widget id="dealer" button-color="333232" ></nextlease-widget>
+    <nextlease-widget id="dealer"></nextlease-widget>
 </body>
     <script>
         var url = new URL(window.location.href)
         var widget = document.getElementById('dealer');
         var param = url.searchParams.get('dealer');
         var dealerName = param ? param : 'karebybil';
-        widget.setAttribute('dealer', param);
+        widget.setAttribute('dealer', dealerName);
     </script>
 </html>
