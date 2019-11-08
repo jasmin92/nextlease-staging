@@ -11,10 +11,12 @@
     <nextlease-widget id="dealer"></nextlease-widget>
 </body>
     <script>
-        var url = new URL(window.location.href)
+        var url = new URL(window.location.href);
         var widget = document.getElementById('dealer');
         var param = url.searchParams.get('dealer');
         var dealerName = param ? param : 'karebybil';
+        var newCarsParam = url.searchParams.get('newCars');
         widget.setAttribute('dealer', dealerName);
+        widget.setAttribute('new-cars', newCarsParam);
     </script>
 </html>

@@ -41,6 +41,10 @@
                     <input id="dealerName" placeholder="karebybil" type="text">
                     <button id="redirectStaging">Test client</button>
                     <br>
+                    <div>
+                        <input id="newCars" type="checkbox">
+                        <label for="newCars">New cars</label>
+                    </div>
                     <div class="note">
                         <small>
                             Note: Please enter correct name, same as in database! If you leave input empty, default name
@@ -94,7 +98,8 @@
 <script>
     document.getElementById('redirectStaging').addEventListener('click', function () {
         var dealer = document.getElementById('dealerName').value;
-        var url = './dealer.html?dealer=' + dealer;
+        var newCars = document.getElementById('newCars').checked;
+        var url = './dealer.html?dealer=' + dealer + '&newCars=' + newCars;
         window.open(url, '_blank');
     })
 </script>
